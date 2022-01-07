@@ -1,0 +1,448 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+
+}
+
+header{
+	width: 100%;
+	position: absolute;
+	padding: 20px 0px;
+}
+
+.btn button{
+	padding: 8px 25px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.btn button:hover{
+	background: #fc8621;
+    border-color: #fc8621;
+    transition: 1s;
+}
+
+.navbar-brand{
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.nav-item{
+	margin: 0px 12px;
+}
+
+.nav-link{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.active{
+	color: rgba(255, 255, 255, 1) !important;
+}
+
+/******************
+Banner Section
+******************/
+
+#banner{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/background.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.35);
+	background-blend-mode: soft-light;
+}
+
+.banner-content{
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.banner-content h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.banner-content a i{
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	line-height: 68px;
+	background-color: white;
+	border-radius: 100%;
+	font-weight: 20px;
+	color: black;
+	position: relative;
+}
+
+.banner-content a i::before{
+	
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	border: solid 1px white;
+	border-radius: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.video{
+	position: relative;
+}
+
+.banner-content a span{
+	margin-left: 16px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 30%;
+
+}
+
+/********************
+About Section
+********************/
+
+#about-us{
+	widows: 100%;
+	padding: 80px 0px;
+}
+
+.content h6{
+	font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fc8621;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content h2{
+	font-size: 46px;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.content p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	color: #212529;
+	margin-bottom: 30px;
+}
+
+.content a{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    color: #fff;   
+    background-color: #fc8621;
+    border-color: #fc8621;
+}
+
+/**************
+Service Section 
+***************/
+
+#service{
+	width: 100%;
+	padding:80px;
+}
+
+.s-item-img{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.price{
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	background-color: white;
+	padding: 30px;
+	color: #fc8621;
+	box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
+}
+.s-items h3{
+	color: #000;
+	font-size: 28px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 600;
+}
+
+.s-items p{
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+/*******************
+faq section
+********************/
+
+#faq{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #f8f9fa;
+}
+
+/*.accordion-item:first-of-type .accordion-button{*/
+	background-color: #fc8621;
+	color: white;
+/*}*/
+
+.faq-item .content h2{
+	margin-bottom: 0px !important;
+}
+
+.accordion-item h2{*/
+	font-weight: 700;
+    color: #fff !important;
+    background: #fc8621;
+    font-family: 'Playfair Display', serif;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/minus.png);
+
+}
+
+.accordion-item {
+    background-color: transparent;
+    border:none;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #f8f9fa;
+    background-color: #fc8621;
+    box-shadow:none;
+}
+
+.accordion-button{
+	padding-left: 50px;
+}
+
+.accordion-button::after{
+	position: absolute;
+	left: 20px;
+}
+
+.feedback img{
+	border-radius: 100%;
+	width:20%;
+	margin-bottom: 25px;
+}
+
+.feedback h5{
+	font-size: 18px;
+	color: #fc8621;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.feedback span{
+	font-size: 14px;
+    color: #000;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.feedback{
+	position: relative;
+}
+
+.qt{
+	line-height: 0;
+	font-size: 80px;
+}
+
+.feedback p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/************************
+blog section
+***********************/
+
+.blog{
+	width: 100%;
+	padding: 80px 0px;
+}
+
+.blog-item img{
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.et{
+	display: block;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.blog-item a h3{
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+
+}
+
+.blog-item a h3:hover{
+	color: #fc8621;
+	transition: 0.3s;
+}
+
+.blog-item p{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.blog-item a span{
+	color: #fc8621;
+}
+
+.blog-item a span:hover{
+	color: #e78f45;
+}
+
+.blog-item span,.blog-item a h3,.blog-item p{
+	margin: 0px 20px;
+}
+
+
+/*************************************
+
+Bottom BAnner section start from here
+
+**************************************/
+
+#bottom-banner{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #fc8621;
+	padding: 60px;
+}
+
+.btm-left h3{
+	font-size: 28px;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-weight: 400;
+
+}
+
+.btm-right{
+	text-align: right;
+}
+
+.btm-right a button{
+	padding: 8px 25px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.btm-right a button:hover{
+	color: #fc8621;
+	transition: 1s;
+	background-color: white
+}
+
+
+/*
+
+footer section
+
+*/
+
+#footer{
+	width: 100%;
+	padding:80px 0px;
+	background: #efefef;
+}
+
+.fot-item h3{
+	font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.fot-item p{
+	background: #efefef;
+    font-size: 14px;
+    color: #888;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.fot-item a i {
+	font-size: 18px;
+    color: white;
+    background: #888;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 100%;
+}
+
+.fot-item a i:hover{
+	background-color: #fc8621;
+	transition: 1s;
+}
+
+.fot-item ul li a{
+	color: #888;
+	text-align: left;
+}
